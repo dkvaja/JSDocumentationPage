@@ -1,0 +1,157 @@
+:root {
+  --main-clr: #f0d81e;
+  --black-clr: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 2vh;
+}
+/* container styling */
+
+.container {
+  /* background-color: blue; */
+  display: flex;
+}
+
+/* navbar styling */
+
+#navbar {
+  /* background-color: aqua; */
+  width: 19vw;
+  height: 100vh;
+  position: fixed;
+  border-right: 3px solid gray;
+}
+#heading {
+  text-align: center;
+  color: var(--black-clr);
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#link-box {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#link-box li {
+  position: relative;
+  border-top: 1px solid black;
+  list-style: none;
+  width: 100%;
+}
+#link-box li a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.9rem 1.8rem;
+  cursor: pointer;
+}
+#link-box li a:hover {
+  color: black;
+  font-weight: 400;
+}
+
+/* main box styling */
+
+#main-doc {
+  background-color: cornsilk;
+  width: 81vw;
+  margin-left: 20.3rem;
+  position: absolute;
+  margin-bottom: 20rem;
+  padding: 1rem 3rem;
+}
+
+.main-section {
+  display: block;
+  margin: 1rem 0rem;
+}
+.main-section header {
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+  padding: 0.5rem;
+}
+.main-section article,
+.main-section p {
+  color: rgb(39, 39, 39);
+  margin: 1rem;
+  font-size: 1.19rem;
+}
+.main-section ul li {
+  margin: 1rem 0rem 0rem 5rem;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-wrap: normal;
+  word-break: normal;
+  line-height: 2;
+  background-color: rgb(209, 209, 209);
+  padding: 1.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.copy {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.4rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+}
+.copy:hover {
+  background-color: black;
+  color: white;
+}
+
+/* footer styling */
+
+footer {
+  background-color: burlywood;
+  text-align: center;
+  font-size: 1rem;
+  height: 100%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 1vh;
+  }
+  #main-doc {
+    margin-left: 9.3rem;
+    margin-right: 0rem;
+  }
+  #heading {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+  }
+  #link-box li a {
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
